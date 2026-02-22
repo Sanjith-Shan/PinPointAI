@@ -28,49 +28,6 @@ A real-time spatial mapping and item tracking app that uses the iPhone's LiDAR s
 
 ---
 
-## Project Setup
-
-### 1. Create a new Xcode project
-
-1. Open Xcode → **File → New → Project**
-2. Select **iOS → App**
-3. Configure:
-   - **Product Name:** `SpatialTracker`
-   - **Interface:** SwiftUI
-   - **Language:** Swift
-   - **Bundle Identifier:** `com.yourname.SpatialTracker`
-4. Click **Create**
-
-### 2. Copy source files
-
-Delete the auto-generated `ContentView.swift` from Xcode, then drag all `.swift` files from this folder into your Xcode project navigator:
-
-```
-SpatialTrackerApp.swift    — App entry point
-ContentView.swift          — Main split-screen UI layout
-ARCameraView.swift         — AR camera feed with mesh overlay
-SpatialMapView.swift       — 3D map visualization
-ARSessionManager.swift     — Core AR session + Vision tracking
-TrackedItem.swift          — Data model for tracked items
-```
-
-### 3. Configure Info.plist
-
-Either replace the auto-generated Info.plist with the provided one, or add these keys manually:
-
-- **Privacy — Camera Usage Description**: `SpatialTracker needs camera access to scan your environment and track items in 3D space using ARKit and LiDAR.`
-- **Required device capabilities**: `arkit`
-- **Supported interface orientations**: Portrait only
-
-### 4. Build & Run
-
-1. Connect your LiDAR-equipped iPhone
-2. Select your device as the build target (this won't work in the simulator)
-3. **Product → Run** (⌘R)
-4. Grant camera permission when prompted
-
----
-
 ## How to Use
 
 ### Scanning Your Space
