@@ -1,4 +1,4 @@
-# SpatialTracker — iOS 3D Item Tracking with LiDAR
+# PinPoint AI — iOS 3D Item Tracking with LiDAR
 
 A real-time spatial mapping and item tracking app that uses the iPhone's LiDAR sensor and ARKit to create a 3D model of your environment, then lets you tag and track physical items within that 3D space.
 
